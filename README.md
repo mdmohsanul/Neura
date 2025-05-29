@@ -1,12 +1,32 @@
-# React + Vite
+# Neura
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project features a dynamic product listing page where all products are fetched from a REST API and displayed as individual cards. Each card links to a dedicated product details page. To enhance the user experience, search and filter functionalities have been implemented, allowing users to easily find specific products.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dynamically fetched Products
+- Search bar
+- Filters like sorting, and filter by category
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Frontend: React.js, Tailwind CSS
+- Routing: React Router
+- State Management: Redux Toolkit
+
+## Getting Started
+
+Follow these instructions to set up the project locally.
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- Yarn or npm
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/mdmohsanul/Neura.git
+   cd project-name
