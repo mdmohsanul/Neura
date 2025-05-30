@@ -36,7 +36,7 @@ console.log(searchQuery)
     }
 
     setProductList(filteredList);
-  }, [category, products, priceSort]);
+  }, [category, products, priceSort, debouncedSearch]);
 
   return productList;
 };

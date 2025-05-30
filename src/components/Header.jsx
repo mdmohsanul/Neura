@@ -28,20 +28,18 @@ const Header = () => {
               <div className="absolute end-0 inset-y-0 flex items-center ps-3 pointer-events-none">
                 <CiSearch className="text-slate-500 font-semibold" size={20} />
               </div>
-              {/* <input
-                type="text"
-                name=""
-                value={searchTerm}
-                onChange={(e) => handleInputChange(e.target.value)}
-                placeholder={`Search`}
-                className="py-2 pr-4  hover:outline-none outline-none  border-b border-slate-600"
-              /> */}
               <input
                 type="text"
                 placeholder="Search by title..."
                 onChange={(e) => dispatch(setSearchQuery(e.target.value))}
-                className="border px-2 py-1 rounded"
+                className="py-2 pr-4  hover:outline-none outline-none  border-b border-slate-600"
               />
+              {/* <input
+                type="text"
+                placeholder="Search by title..."
+                onChange={(e) => dispatch(setSearchQuery(e.target.value))}
+                className="border px-2 py-1 rounded"
+              /> */}
             </div>
             <Link
               to="/favorites"
