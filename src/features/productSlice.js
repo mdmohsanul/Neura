@@ -6,6 +6,11 @@ const initialState = {
   favProducts: [],
   loading: false,
   error: null,
+  filters: {
+    category: "",
+    priceSort: "",
+    searchQuery: "",
+  },
 };
 const productSlice = createSlice({
   name: "product",
@@ -18,6 +23,15 @@ const productSlice = createSlice({
       state.favProducts = state.favProducts.filter(
         (prod) => prod.id !== action.payload
       );
+    },
+    setCategory: (state, action) => {
+      state.filters.category = action.payload;
+    },
+    setSortPrice: (state, action) => {
+      state.filters.priceSort = action.payload;
+    },
+    setSearchQuery: (state, action) => {
+      state.searchQuery = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -37,6 +51,12 @@ const productSlice = createSlice({
   },
 });
 
-export const { setfavProducts, removeFavProduct } = productSlice.actions;
+export const {
+  setfavProducts,
+  removeFavProduct,
+  setCategory,
+  setSortPrice,
+  setSearchQuery,
+} = productSlice.actions;
 
 export default productSlice.reducer
